@@ -94,6 +94,18 @@ class linkedList {
     }
     return secondlarget + secondSmallest;
   }
+  findMiddleNode(){
+    if(this.isEmpty()){
+      return null
+    }
+    let slow = this.head
+    let fast = this.head
+    while(fast && fast.next){
+      slow = slow.next
+      fast = fast.next.next
+    }
+    return slow.value
+  }
 }
 let list = new linkedList();
 let word = "malayalam";
@@ -102,3 +114,4 @@ for (let char of word) {
 }
 list.print();
 console.log(list.isPalindrome());
+console.log(list.findMiddleNode());

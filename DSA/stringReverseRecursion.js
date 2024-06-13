@@ -14,7 +14,6 @@ let result=''
 // console.log(reverse(word))
 
 function reverse(str){
-    let arr=[]
     if(str.length<1){
         return str
     }
@@ -22,3 +21,9 @@ function reverse(str){
 }
 console.log(reverse(word))
 // console.log(result)
+
+function reverse1 (str){
+    if(!str.length)return "";
+    return reverse1(str.slice(1))+str.charAt(0);
+}
+console.log(reverse1(word))

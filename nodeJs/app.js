@@ -1,12 +1,12 @@
 // http method create server
 // const http = require('http');
 
-// const PORT = 3000;
-// const server = http.createServer((req,res)=>{
-//     res.statusCode=200;
-//     res.setHeader('content-type','text/plain');
-//     res.end('hello rilwan')
-// })
+const PORT = 3000;
+const server = http.createServer((req,res)=>{
+    res.statusCode=200;
+    res.setHeader('content-type','text/plain');
+    res.end('hello rilwan')
+})
 
 // server.listen(PORT,()=>{
 //     console.log(`server running on http://localhost:${PORT}/` )

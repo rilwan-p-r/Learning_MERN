@@ -12,6 +12,7 @@ import ContextProvider from "./useContext/contextProvider";
 import ParentComponent from "./useCallback/useCallback";
 import Reducer from "./useReducer/reducer";
 import UseMemo from "./useMemo/useMemo";
+import Object from "./dropdown/object";
 function App() {
   return (
     // <Provider store={store}>
@@ -30,7 +31,7 @@ function App() {
   //   <Page2/>
   // </ContextProvider>
   <>
-  <UseMemo/>
+  <Object/>
   </>
   );
 }

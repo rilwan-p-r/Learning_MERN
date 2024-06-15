@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 // import { Provider } from 'react-redux';
 // import {store,persistor} from './sample/store'
 // import Page from './sample/page';
@@ -13,6 +13,7 @@ import ParentComponent from "./useCallback/useCallback";
 import Reducer from "./useReducer/reducer";
 import UseMemo from "./useMemo/useMemo";
 import Object from "./dropdown/object";
+import RouterPage from "./router/router";
 function App() {
   return (
     // <Provider store={store}>
@@ -31,7 +32,12 @@ function App() {
   //   <Page2/>
   // </ContextProvider>
   <>
-  <Object/>
+  <Router>
+<Routes>
+  <Route path="/" element={<RouterPage/>}/>
+</Routes>
+  
+  </Router>
   </>
   );
 }

@@ -10,10 +10,10 @@ function heapfy(heap, i, heapsize) {
   let rightChild = i * 2 + 2;
   let largest = i;
 
-  if (leftChild < heapsize && heap[leftChild] > heap[[largest]]) {
+  if (leftChild < heapsize && heap[leftChild] > heap[largest]) {
     largest = leftChild;
   }
-  if (rightChild < heapsize && heap[rightChild] > heap[[largest]]) {
+  if (rightChild < heapsize && heap[rightChild] > heap[largest]) {
     largest = rightChild;
   }
   if (largest !== i) {

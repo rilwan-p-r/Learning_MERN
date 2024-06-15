@@ -36,7 +36,7 @@ class hashMap{
         let index=this.hash(key)
         let bucket = this.table[index]
         if(bucket){
-            let sameKeyArr = bucket.find(item=>item===key)
+            let sameKeyArr = bucket.find(item=>item[0]===key)
             bucket.splice(bucket.indexOf(sameKeyArr),1)
         }
     }

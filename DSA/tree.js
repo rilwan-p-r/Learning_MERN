@@ -61,16 +61,16 @@ min(root){
     if(!root.left){
         return root.value
     }else{
-        return root.min(root.left)
+        return this.min(root.left)
     }
 }
 }
 let tree=new binaryTree()
-tree.insert(1)
 tree.insert(2)
-tree.insert(3)
-tree.insert(4)
 tree.insert(5)
+tree.insert(3)
+tree.insert(1)
+tree.insert(4)
 tree.inorder(tree.root)
 console.log(tree.search(tree.root,9))
 console.log(tree.min(tree.root))

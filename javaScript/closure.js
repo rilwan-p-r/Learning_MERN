@@ -3,9 +3,10 @@ function outerFunction() {
   function innerFunction() {
     console.log(a);
     let b = "inner";
-    return b;
+    console.log(b);
+    // return b;
   }
   return innerFunction;
 }
 const innerval = outerFunction()()
-console.log(innerval)
+// console.log(innerval)

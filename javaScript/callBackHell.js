@@ -33,3 +33,16 @@ firstFunction(1).then((res)=>{
 .catch((err)=>{
 console.error(err)
 })
+
+async function executeFunctions() {
+    try {
+      let result = await firstFunction(1);
+      result = await secondFunction(result);
+      result = await thirdFunction(result);
+      console.log(result); // Output: 4
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  
+  executeFunctions();

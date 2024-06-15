@@ -5,8 +5,8 @@ function abc(a) {
     };
   };
 }
-let a = abc(1);
-let b = abc(2);
-console.log(b);
+// let a = abc(1);
+// let b = abc(2);
+// console.log(b);
 
 console.log(abc(1)(2)(3));

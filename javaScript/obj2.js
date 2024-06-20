@@ -17,3 +17,4 @@ for(let i=0;i<obj.length;i++){
     sum+=obj[i][key].age
 }
 console.log(sum);
+//
